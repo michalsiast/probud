@@ -4,25 +4,25 @@
     <div class="row g-4">
         <div class="col-lg-12 wow fadeInUp" data-wow-delay=".3s">
             <div class="form-clt form-group">
-                <input type="text" name="name" id="name" placeholder="Imię *" class="form-control" required>
+                <input type="text" name="name" id="name" placeholder="Imię *" required>
                 <div class="invalid-feedback"></div>
             </div>
         </div>
         <div class="col-md-6 wow fadeInUp" data-wow-delay=".5s">
             <div class="form-clt form-group">
-                <input id="email" type="email" name="email" placeholder="Email *" class="form-control" required>
+                <input id="email" type="email" name="email" placeholder="Email *" required>
                 <div class="invalid-feedback"></div>
             </div>
         </div>
         <div class="col-md-6 wow fadeInUp" data-wow-delay=".5s">
             <div class="form-clt form-group">
-                <input id="phone" type="text" name="phone" placeholder="Telefon *" class="form-control" required>
+                <input id="phone" type="text" name="phone" placeholder="Telefon *" required>
                 <div class="invalid-feedback"></div>
             </div>
         </div>
         <div class="col-md-12 wow fadeInUp" data-wow-delay=".7s">
             <div class="form-clt form-group">
-                <textarea id="message" name="message" rows="5" placeholder="Wiadomość *" class="form-control" required></textarea>
+                <textarea id="message" name="message" rows="5" placeholder="Wiadomość *" required></textarea>
                 <div class="invalid-feedback"></div>
             </div>
         </div>
