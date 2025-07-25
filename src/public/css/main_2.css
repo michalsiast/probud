@@ -19,12 +19,7 @@
   margin-top: 1rem!important;
 }
 .g-recaptcha > div {
-  margin: 0 auto 1rem;
-}
-@media (max-width: 600px) {
-  .g-recaptcha {
-    transform: scale(0.75);
-  }
+  margin: 0 0 1rem;
 }
 .form-group {
   width: 100%;
