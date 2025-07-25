@@ -15,9 +15,9 @@
             <div class="row g-4 align-items-center">
                 <div class="col-lg-6">
                     <div class="about-image">
-                        <img src="{{asset('images/about_us_1.jpg')}}" style="width: 555px;height: 642px;object-fit: cover" alt="img" class="about-image-1 wow img-custom-anim-left" data-wow-duration="1.3s" data-wow-delay="0.3s">
+                        <img src="{{asset('images/about_us_1.jpg')}}" style="width: 100%;height: 642px;object-fit: cover" alt="img" class="about-image-1 wow img-custom-anim-left" data-wow-duration="1.3s" data-wow-delay="0.3s">
                         <div class="about-image-2">
-                            <img src="{{asset('images/about_us_2.jpg')}}" style="width: 302px; height: 364px;object-fit: cover" alt="img" class="wow img-custom-anim-right" data-wow-duration="1.3s" data-wow-delay="0.3s">
+                            <img src="{{asset('images/about_us_2.jpg')}}" style="width: 100%; height: 364px;object-fit: cover" alt="img" class="wow img-custom-anim-right" data-wow-duration="1.3s" data-wow-delay="0.3s">
                         </div>
                         <div class="about-counter">
                             @php $experianceYear = date('Y') - 2015; @endphp
