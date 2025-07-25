@@ -31,13 +31,13 @@
                                 </td>
                                 <td>
                                     {{$realization_category->title}}
-                                    @if(isset($realization_category->seo))
-                                        <small style="display: block">
-                                            <a @if($realization_category->active) target="_blank" @else style="color: grey; opacity: .75" @endif href="@if($realization_category->active){{url()->to('')}}{{$realization_category->seo->url}}@else#@endif">
-                                                {{str_replace(['https://', 'http://'], '', url()->to(''))}}{{$realization_category->seo->url}}
-                                            </a>
-                                        </small>
-                                    @endif
+{{--                                    @if(isset($realization_category->seo))--}}
+{{--                                        <small style="display: block">--}}
+{{--                                            <a @if($realization_category->active) target="_blank" @else style="color: grey; opacity: .75" @endif href="@if($realization_category->active){{url()->to('')}}{{$realization_category->seo->url}}@else#@endif">--}}
+{{--                                                {{str_replace(['https://', 'http://'], '', url()->to(''))}}{{$realization_category->seo->url}}--}}
+{{--                                            </a>--}}
+{{--                                        </small>--}}
+{{--                                    @endif--}}
                                 </td>
                                 <td>
                                     <input type="checkbox" class="status-switch" data-source_table="realization_category" data-source_id="{{$realization_category->id}}" {{$realization_category->active ? 'checked' : ''}}>

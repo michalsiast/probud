@@ -8,20 +8,6 @@
                 {{__('admin.offer.plural')}}
                 <a href="{{route('admin.offer.create')}}" class="btn btn-primary">{{__('admin.crud.create')}}</a>
             </div>
-            <div class="card-header">
-                @if(isset($categories))
-                    <form action="{{route('admin.offer.index')}}" method="get" id="searchCategory" class="searchCategory">
-                        <label for="Filtrowanie">Filter kategorii:</label>
-
-                        <select name="category" id="category">
-                            <option value="0">Wszystkie</option>
-                            @foreach($categories as $category)
-                                <option value="{{$category->id}}" @if(isset($_GET['category'])){{$_GET['category'] == $category->id ? 'selected="selected"' : ''}}@endif>{{$category->title}}</option>
-                            @endforeach
-                        </select>
-                    </form>
-                @endif
-            </div>
             <div class="card-body">
                 <table class="table table-striped table-responsive-sm sortable" data-table="offer">
                     <thead>
@@ -29,7 +15,7 @@
                             <td>#</td>
                             <td></td>
                             <td>{{__('admin.offer.title')}}</td>
-                            <td>Kategoria</td>
+{{--                            <td>Kategoria</td>--}}
                             <td>{{__('admin.active')}}</td>
                             <td></td>
                         </tr>
@@ -53,7 +39,6 @@
                                         </small>
                                     @endif
                                 </td>
-                                <td>{!! $offer->category->title ?? '' !!}</td>
                                 <td>
                                     <input type="checkbox" class="status-switch" data-source_table="offer" data-source_id="{{$offer->id}}" {{$offer->active ? 'checked' : ''}}>
                                 </td>

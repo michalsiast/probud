@@ -1,48 +1,50 @@
 
 
-<form id="contactForm" method="POST">
-    <div class="form-group">
-        <label for="name">Imię *</label>
-        <input id="name" type="text" name="name" placeholder="Imię *" class="form-control" required>
-        <div class="invalid-feedback"></div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="form-group">
-                <label for="email">Email *</label>
+<form id="contactForm" method="POST" class="contact-form-items">
+    <div class="row g-4">
+        <div class="col-lg-12 wow fadeInUp" data-wow-delay=".3s">
+            <div class="form-clt form-group">
+                <input type="text" name="name" id="name" placeholder="Imię *" class="form-control" required>
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
+        <div class="col-md-6 wow fadeInUp" data-wow-delay=".5s">
+            <div class="form-clt form-group">
                 <input id="email" type="email" name="email" placeholder="Email *" class="form-control" required>
                 <div class="invalid-feedback"></div>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="form-group">
-                <label for="phone">Telefon *</label>
+        <div class="col-md-6 wow fadeInUp" data-wow-delay=".5s">
+            <div class="form-clt form-group">
                 <input id="phone" type="text" name="phone" placeholder="Telefon *" class="form-control" required>
                 <div class="invalid-feedback"></div>
             </div>
         </div>
-    </div>
-    <div class="form-group">
-        <label for="message">Wiadomość *</label>
-        <textarea id="message" name="message" rows="5" placeholder="Wiadomość *" class="form-control" required></textarea>
-        <div class="invalid-feedback"></div>
-    </div>
+        <div class="col-md-12 wow fadeInUp" data-wow-delay=".7s">
+            <div class="form-clt form-group">
+                <textarea id="message" name="message" rows="5" placeholder="Wiadomość *" class="form-control" required></textarea>
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input id="rule" type="checkbox" name="rule" placeholder="Rule" class="form-check-input">
+                <label for="rule" class="form-check-label" style="color:#fff;">{!! getConstField('contact_form_rule') !!}</label>
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
 
-    <div class="form-group">
-        <div class="form-check">
-            <input id="rule" type="checkbox" name="rule" placeholder="Rule" class="form-check-input">
-            <label for="rule" class="form-check-label">{!! getConstField('contact_form_rule') !!}</label>
+        <div class="form-group">
+            <div class="g-recaptcha" data-sitekey="{{$siteKey}}"></div>
             <div class="invalid-feedback"></div>
         </div>
+
+        <div class="col-lg-12 wow fadeInUp" data-wow-delay=".3s">
+            <button type="submit" class="theme-btn bg-black">
+                Wyślij wiadomość <i class="far fa-arrow-right"></i>
+            </button>
+        </div>
     </div>
-
-    <div class="form-group">
-        <div class="g-recaptcha" data-sitekey="{{$siteKey}}"></div>
-        <div class="invalid-feedback"></div>
-    </div>
-
-    <input type="submit" value="Wyślij" class="btn btn-outline-primary mb-3">
-
     <div id="alert" class="alert"></div>
 </form>
 

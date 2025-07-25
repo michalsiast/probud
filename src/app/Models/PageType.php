@@ -20,8 +20,16 @@ abstract class PageType extends Enum
         'module' => false,
         'fields' => [
             'rotator' => ['rotator', 'Slider'],
-            'head1' => ['head', 'Tytuł'],
-            'text1' => ['text', 'Tekst'],
+            'subtitle_about_us' => ['head', 'Podtytuł - O nas'],
+            'header_about_us' => ['head', 'Nagłówek - O nas'],
+            'description_about_us' => ['text', 'Opis - O nas'],
+            'subtitle_machine_park' => ['head', 'Podtytuł - Park maszynowy'],
+            'header_machine_park' => ['head', 'Nagłówek - Park maszynowy'],
+            'description_machine_park' => ['text', 'Opis - Park maszynowy'],
+            'subtitle_why_us' => ['head', 'Podtytuł - Dlaczego my'],
+            'header_why_us' => ['head', 'Nagłówek - Dlaczego my'],
+            'subtitle_offer' => ['head', 'Podtytuł - Oferta'],
+            'header_offer' => ['head', 'Nagłówek - Oferta'],
         ]
     ];
     const PAGE_SHOW = [
@@ -49,7 +57,10 @@ abstract class PageType extends Enum
         'name' => 'contact.show',
         'module' => false,
         'fields' => [
-            'text1' => ['text', '']
+            'subtitle_contact' => ['head', 'Podtytuł - Kontakt'],
+            'header_contact' => ['head', 'Nagłówek - Kontakt'],
+            'description_contact' => ['text', 'Opis - Kontakt'],
+            'header_contact_2' => ['head', 'Nagłówek 2 - Kontakt'],
         ]
     ];
     const ARTICLE_INDEX = [
